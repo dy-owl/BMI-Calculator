@@ -19,13 +19,11 @@ struct CalculatorBrain {
     }
     
     func getAdvice() -> String {
-        let bmiAdvice = bmi?.advice ?? "Advice has not found"
-        return bmiAdvice
+        return bmi?.advice ?? "Advice has not found"
     }
     
     func getColor() -> UIColor {
-        let bmiColor = bmi?.color ?? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        return bmiColor
+        return bmi?.color ?? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
     mutating func calculateBMI(height: Float, weight: Float) {
